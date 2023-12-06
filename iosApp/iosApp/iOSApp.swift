@@ -5,7 +5,8 @@ struct iOSApp: App {
 	var body: some Scene {
 		WindowGroup {
 		    ZStack {
-		        Color.white.ignoresSafeArea(.all) // status bar color
+          let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
+          skyBlue.ignoresSafeArea(.all) // status bar color
 			    ContentView()
 			}.preferredColorScheme(.light)
 		}

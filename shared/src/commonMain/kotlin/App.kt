@@ -24,8 +24,10 @@ fun App() {
     MaterialTheme {
         var greetingText by remember { mutableStateOf("Hello, World!") }
         var showImage by remember { mutableStateOf(false) }
+
+        val skyBlue = Color.Blue.copy(red = 0.4627f, green = 0.8392f, blue = 1.0f)
         Column(
-            Modifier.fillMaxSize().background(Color.Blue),
+            Modifier.fillMaxSize().background(skyBlue),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Button(onClick = {
